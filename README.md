@@ -12,6 +12,7 @@ This project is designed to benchmark various operations in different programmin
 - Node.js
 - PHP
 - Ruby
+- C++
 
 ## Setup
 
@@ -28,17 +29,13 @@ This project is designed to benchmark various operations in different programmin
     pip install -r requirements.txt
     ```
 
-3. **Install Maven dependencies**:
-    ```sh
-    mvn install
-    ```
-
 ## Running Benchmarks
 
 ### Java
 
 To run the Java benchmark, execute the following command:
 ```sh
+mvn install
 mvn compile
 mvn exec:java -Dexec.mainClass="com.benchmark.Main"
 ```
@@ -61,6 +58,13 @@ php php_benchmark.php
 ### Ruby
 ```sh
 ruby ruby_benchmark.rb
+```
+
+### C++
+```sh
+brew install jsoncpp
+g++ -std=c++11 -o cpp_benchmark cpp_benchmark.cpp -I/usr/local/include -L/usr/local/lib -ljsoncpp
+./cpp_benchmark
 ```
 
 ### Generating Samples
