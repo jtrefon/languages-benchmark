@@ -1,3 +1,4 @@
 target
 venv
 samples.json
+.DS_Store
