@@ -2,3 +2,5 @@ target
 venv
 samples.json
 .DS_Store
+dotnet_benchmark/bin
+dotnet_benchmark/obj

@@ -67,6 +67,11 @@ g++ -std=c++11 -o cpp_benchmark cpp_benchmark.cpp -I/usr/local/include -L/usr/lo
 ./cpp_benchmark
 ```
 
+### Go
+```sh
+go run go_benchmark.go
+```
+
 ### Generating Samples
 ```sh
 python generate_samples.py 1000000
